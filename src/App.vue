@@ -1,15 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <h1>Austin's learning lists</h1>
+    <learning-list header="Tech" />
+    <learning-list-2 header="Finance"/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LearningList from './components/LearningList.vue'
+import LearningList2 from './components/LearningList2.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    LearningList,
+    LearningList2
   }
 }
 </script>
@@ -19,7 +24,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
 }
